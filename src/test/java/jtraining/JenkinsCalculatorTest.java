@@ -1,14 +1,17 @@
 package jtraining;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 public class JenkinsCalculatorTest {
+	@Test
 	public void addTwoNumbersTest() {
-		JenkinsCalculator cal = new JenkinsCalculator();
-		Assert.assertEquals("adding two number test", 10, cal.addTwoNumbers(5, 5));
+		JenkinsCalculator obj = new JenkinsCalculator();
+		Assert.assertEquals("adding two number test", 10, obj.addTwoNumbers(5, 5));
 	}
-	public void subtractTwoNumbersTest(int a, int b) {
-		JenkinsCalculator cal = new JenkinsCalculator();
-		Assert.assertEquals("subtracting two number test", 0, cal.subtractTwoNumbers(5, 5));
+	@Test
+	public void subtractTwoNumbersTest() {
+		JenkinsCalculator obj = new JenkinsCalculator();
+		Assert.assertEquals("subtracting two number test", 0, obj.subtractTwoNumbers(5, 5));
 	}
 }
